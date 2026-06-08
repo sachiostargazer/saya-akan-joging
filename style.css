@@ -1,0 +1,39 @@
+/* Tambahkan ini di bagian bawah style.css */
+
+.countdown-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: bold;
+    color: #2c2c2c;
+    text-shadow: 4px 4px 0px #fff;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* Animasi Pop untuk Angka Hitung Mundur */
+.countdown-animate {
+    animation: popAndFade 1s ease-in-out;
+}
+
+@keyframes popAndFade {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+    20% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}
