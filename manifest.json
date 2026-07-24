@@ -1,0 +1,9 @@
+{
+    "short_name": "Joging",
+    "name": "Saya Akan Joging!",
+    "start_url": "./index.html",
+    "background_color": "#2c2c2c",
+    "theme_color": "#2c2c2c",
+    "display": "fullscreen",
+    "orientation": "landscape"
+  }
