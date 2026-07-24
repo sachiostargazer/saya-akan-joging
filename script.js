@@ -402,3 +402,12 @@ container.addEventListener('touchstart', (e) => {
         triggerJump(); 
     } 
 });
+function toggleFullscreen() {
+    let doc = document.documentElement;
+    if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+      if (doc.requestFullscreen) doc.requestFullscreen();
+      else if (doc.webkitRequestFullscreen) doc.webkitRequestFullscreen();
+    } else {
+      if (document.exitFullscreen) document.exitFullscreen();
+    }
+}
